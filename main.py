@@ -4,14 +4,11 @@ import cvzone
 import math
 import time
 
-# ==========================================
+
 # Cargar el modelo YOLOv8
-# ==========================================
 modelo = YOLO("yolov8n.pt")
 
-# ==========================================
 # Abrir la cámara
-# ==========================================
 camara = cv2.VideoCapture(0)
 
 camara.set(3, 1280)   # Ancho
@@ -19,9 +16,7 @@ camara.set(4, 720)    # Alto
 
 tiempo_anterior = 0
 
-# ==========================================
 # Bucle principal
-# ==========================================
 while True:
 
     exito, imagen = camara.read()
